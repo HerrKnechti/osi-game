@@ -13,6 +13,7 @@ public class OsiGame extends ApplicationAdapter {
 	public void create () {
 		batch = new SpriteBatch();
 		img = new Texture("badlogic.jpg");
+		System.out.println("create");
 	}
 
 	@Override
@@ -21,11 +22,13 @@ public class OsiGame extends ApplicationAdapter {
 		batch.begin();
 		batch.draw(img, 0, 0);
 		batch.end();
+		System.out.println("render");
 	}
 	
 	@Override
 	public void dispose () {
 		batch.dispose();
 		img.dispose();
+		System.out.println("dispose");
 	}
 }
