@@ -30,5 +30,7 @@ public class OsiGame extends ApplicationAdapter {
 		batch.dispose();
 		img.dispose();
 		System.out.println("dispose");
+
+		//test commit
 	}
 }
